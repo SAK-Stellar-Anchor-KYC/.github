@@ -6,7 +6,7 @@
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 1. SAK
 2. Target Users & Needs  
 3. Solution Overview  
@@ -27,11 +27,11 @@ In practice, a new user verifies with an anchor and can transact immediately, wh
 
 This creates:
 
-- ⏳ Long onboarding times  
-- 💸 High operational costs  
-- 📂 Duplicate document uploads  
-- 🔐 Increased security exposure  
-- 🚫 Poor scalability across the network  
+-  Long onboarding times  
+-  High operational costs  
+-  Duplicate document uploads  
+-  Increased security exposure  
+-  Poor scalability across the network  
 
 ### **Who is affected?**
 
@@ -40,7 +40,7 @@ This creates:
 - On/off-ramp companies  
 - Platforms requiring compliance  
 
-## 2. 🎯 Target Users & Needs  
+## 2. Target Users & Needs  
 
 ### **Primary User**
 **Stellar Anchors**
@@ -62,7 +62,7 @@ Each Anchor runs its own KYC process:
 
 ---
 
-## 3. 🧩 Solution Overview  
+## 3. Solution Overview  
 
 ### **Main Idea**
 **SAK provides a unified and automated KYC system with a ZK-based encrypted Vault.**  
@@ -89,7 +89,7 @@ This eliminates:
 
 ---
 
-### ⭐ Why Stellar?
+### Why Stellar?
 - Built around **SEP-12**  
 - Reduces compliance workload  
 - Standardizes KYC flows  
@@ -98,7 +98,7 @@ This eliminates:
 
 ---
 
-## 4. ⚙️ Core Features  
+## 4. Core Features  
 
 ### **Feature 1: One-Time KYC Submission**
 User completes KYC only once through SAK.  
@@ -132,7 +132,7 @@ Document type + region → BASE / SEPA / AAA.
 
 ---
 
-## 6. 🧪 Success Criteria  
+## 6. Success Criteria  
 
 - A user can complete KYC once via SAK  
 - An Anchor can read KYC data **without duplication**  
@@ -143,13 +143,9 @@ Document type + region → BASE / SEPA / AAA.
 
 ---
 
-### 7. 👥 Team  
-
-## 🛠️ Tech Stack
+### 7. Team  
 
 <div align="center">
-
-
 
 <table>
   <tr>
