@@ -7,21 +7,23 @@
 ---
 
 ## 📑 Table of Contents
-1. Problem Statement  
+1. SAK
 2. Target Users & Needs  
 3. Solution Overview  
 4. Core Features  
 5. MVP Architecture  
-6. Success Criteria  
-7. Team  
+6. TEAM  
+7. FAQ  
 
 ---
 
-## 1. 🚨 Problem Statement  
-### **What real-world problem are we solving?**
+## 1. Stellar Anchor KyC  
+### **What IS SAC?**
 
-Stellar Anchors currently operate **manual, isolated and repetitive KYC/AML processes**.  
-Every Anchor verifies users **from scratch**, even if the user has already completed KYC elsewhere.
+SAK is a unified KYC infrastructure for Stellar anchors, designed to correct defective identity verification processes in the ecosystem. Currently, anchors verify users from scratch in a redundant manner, leading to slow onboarding, high costs, duplicate document uploads, and security risks from centralized data storage, such as the 2024 Fractal ID breach. <br><br>
+The solution allows users to complete KYC only once in an encrypted and decentralized vault that uses IPFS for immutable blobs and zero-knowledge proofs for privacy, enabling anchors to query verified data via SEP-12 without exposing sensitive information.<br><br>
+This improves efficiency with instant onboarding, reduces compliance expenses, minimizes data exposure, and enhances interoperability between anchors and apps.
+In practice, a new user verifies with an anchor and can transact immediately, while returning users seamlessly switch to others without re-verification.
 
 This creates:
 
@@ -37,18 +39,6 @@ This creates:
 - Users interacting with multiple anchors  
 - On/off-ramp companies  
 - Platforms requiring compliance  
-
-### **Why is this urgent now?**
-
-The Stellar ecosystem is expanding, and recent incidents — such as the **July 2024 Fractal ID breach** — revealed a major vulnerability:
-
-> Multiple companies store full KYC datasets → multiplied attack surface.
-
-Since Stellar users frequently interact with several Anchors, the risk increases.
-
-👉 A **unified, encrypted, permission-controlled KYC Vault** is needed **now**.
-
----
 
 ## 2. 🎯 Target Users & Needs  
 
@@ -112,19 +102,19 @@ This eliminates:
 
 ### **Feature 1: One-Time KYC Submission**
 User completes KYC only once through SAK.  
-✔️ Working if: The system stores & retrieves the KYC record.
+- Working if: The system stores & retrieves the KYC record.
 
 ---
 
 ### **Feature 2: Anchor KYC Lookup**
 Anchors request KYC data and receive **status + verification tier**.  
-✔️ Working if: Anchor sees validated user information.
+- Working if: Anchor sees validated user information.
 
 ---
 
 ### **Feature 3: Automatic KYC Tier Assignment**
 Document type + region → BASE / SEPA / AAA.  
-✔️ Working if: User receives correct tier.
+- Working if: User receives correct tier.
 
 ---
 
@@ -135,30 +125,21 @@ Document type + region → BASE / SEPA / AAA.
 
 ---
 
-## 5. 🏗️ MVP Architecture  
-
-### **Stack**
-- **Frontend:** Next.js + TailwindCSS  
-- **Backend:** Node.js  
-- **Smart Contracts:** Soroban (permissions + audit)  
-- **Database:** PostgreSQL  
-- **ZK:** Noir (Aztec)  
-- **Storage:** Encrypted off-chain Vault (or simulated in demo)  
-
----
-
 ### **Flow Diagram**
+
+<img width="1099" height="626" alt="image" src="https://github.com/user-attachments/assets/9e5841e3-0349-46b8-a915-25a120901594" />
+
 
 ---
 
 ## 6. 🧪 Success Criteria  
 
-- ✔️ A user can complete KYC once via SAK  
-- ✔️ An Anchor can read KYC data **without duplication**  
-- ✔️ Automatic tier assignment operates correctly  
-- ✔️ User can grant/revoke anchor access *(to validate with mentors)*  
-- ✔️ Onboarding to a second Anchor is instant  
-- ✔️ Fast onboarding flow for users  
+- A user can complete KYC once via SAK  
+- An Anchor can read KYC data **without duplication**  
+- Automatic tier assignment operates correctly  
+- User can grant/revoke anchor access *(to validate with mentors)*  
+- Onboarding to a second Anchor is instant  
+- Fast onboarding flow for users  
 
 ---
 
@@ -166,32 +147,51 @@ Document type + region → BASE / SEPA / AAA.
 
 ## 🛠️ Tech Stack
 
-<p align="center">
-  <table>
-    <tr>
-      <td align="center">
-        <img src="https://github.com/user-attachments/assets/4079a4f0-8ab5-43bf-8a02-267c5c471691" width="140" /><br/>
-        <sub><b>Diego Raúl Barrionuevo</b></sub>
-      </td>
-      <td align="center">
-        <img src="https://github.com/user-attachments/assets/4079a4f0-8ab5-43bf-8a02-267c5c471691" width="140" /><br/>
-        <sub><b>Leandro Masotti</b></sub>
-      </td>
-      <td align="center">
-        <img src="https://github.com/user-attachments/assets/4079a4f0-8ab5-43bf-8a02-267c5c471691" width="140" /><br/>
-        <sub><b>Manuel Jimenez Garro</b></sub>
-      </td>
-      <td align="center">
-        <img src="https://github.com/user-attachments/assets/4079a4f0-8ab5-43bf-8a02-267c5c471691" width="140" /><br/>
-        <sub><b>Gonzalo Chacón</b></sub>
-      </td>
-      <td align="center">
-        <img src="https://github.com/user-attachments/assets/4079a4f0-8ab5-43bf-8a02-267c5c471691" width="140" /><br/>
-        <sub><b>Augusto F. Rios Choque</b></sub>
-      </td>
-    </tr>
-  </table>
-</p>
+<div align="center">
+
+
+
+<table>
+  <tr>
+    <!-- Diego -->
+    <td align="center">
+      <a href="https://github.com/Kalchaqui">
+        <img src="https://github.com/user-attachments/assets/4079a4f0-8ab5-43bf-8a02-267c5c471691" width="120" alt="Diego Raúl Barrionuevo"><br>
+        Diego Raúl Barrionuevo
+      </a>
+    </td>
+    <!-- Leandro -->
+    <td align="center">
+      <a href="https://github.com/leandromasotti">
+        <img src="https://github.com/user-attachments/assets/426f321b-130d-41ea-a254-994859d655f2" width="120" alt="Leandro Masotti"><br>
+        Leandro Masotti
+      </a>
+    </td>
+    <!-- Manuel -->
+    <td align="center">
+      <a href="https://github.com/ManuelJG1999">
+        <img src="https://github.com/user-attachments/assets/3d535208-1054-4c5e-8253-3740d12e78f0" width="120" alt="Manuel Jiménez Garro"><br>
+        Manuel Jiménez Garro
+      </a>
+    </td>
+    <!-- Gonzalo -->
+    <td align="center">
+      <a href="https://github.com/gchacon011">
+        <img src="https://github.com/user-attachments/assets/5b8e9ee6-d6c8-45dc-8b18-9511fa09fd06" width="120" alt="Gonzalo Chacón"><br>
+        Gonzalo Chacón
+      </a>
+    </td>
+    <!-- Augusto -->
+    <td align="center">
+      <a href="https://github.com/SphinxBSD">
+        <img src="https://github.com/user-attachments/assets/941dc8ad-ba99-4b8e-bfd8-33f2eb2ebd1b" width="120" alt="Augusto F. Rios Choque"><br>
+        Augusto F. Rios Choque
+      </a>
+    </td>
+  </tr>
+</table>
+
+</div>
 
 
 ---
@@ -199,61 +199,25 @@ Document type + region → BASE / SEPA / AAA.
 ## 8. **FAQ**
 ### Unified KYC Infrastructure for Stellar Anchors – FAQ
 
-In an increasingly global economy, financial institutions are more vulnerable to illicit criminal activities. Know Your Customer (KYC) standards are designed to protect financial institutions against fraud, corruption, money laundering and terrorist financing.
+KYC in Stellar is broken: Anchors repeat verifications, causing slow onboarding, high costs, and security risks from centralized data (e.g., Fractal ID breach). Goal: Reduce redundancy, enhance security, and speed up processes.
+- Who is affected?
+Anchors, users, wallets/apps, and the entire Stellar ecosystem.
+- Why do current solutions fail?
+Redundant processes across anchors, vulnerable centralized storage, manual verifications, and no shared identity infrastructure.
+- What is the proposed solution?
+Users do KYC once, stored in an encrypted Vault. Anchors verify via SEP-12 using zero-knowledge proofs for secure, data-minimizing checks.
+- How does it benefit the ecosystem?
+Eliminates repeats, enables instant onboarding, cuts costs, reduces data exposure, and boosts interoperability.
+- How does it work?
+New User: Completes KYC with one anchor (e.g., Ripio); SAK verifies/stores; instant transactions; others access verified data.
+Returning User: Switches anchors (e.g., Anclap); retrieves prior KYC via API; seamless without re-verification.
 
-- ✔️ What problem does this solution address?
-KYC (Know Your Customer) processes are currently broken in the Stellar ecosystem:
-Anchors repeat KYC for every user.
-Onboarding is slow.
-Compliance costs are high.
-Centralized KYC creates a huge attack surface (e.g., Fractal ID breach).
-Goal: Reduce redundancy, improve security, and streamline onboarding.
+- Why is this important?
+Offers encrypted decentralized storage (IPFS), one-time KYC efficiency, flexibility across tools, and faster operations.
 
-- ✔️ Who is affected by the current KYC challenges?
-Anchors
-Users
-Wallets & Apps
-The entire Stellar ecosystem
 
-- ✔️ Why do current KYC solutions fail?
-Redundant KYC processes across multiple anchors.
-Centralized data storage → vulnerable to breaches.
-Manual verification slows operations.
-No shared infrastructure for identity verification.
 
-- ✔️ What is the proposed solution?
-Users complete KYC once.
-Data stored in an encrypted KYC Vault.
-Anchors verify identity via SEP-12 protocol.
 
-Zero-Knowledge proofs ensure secure verification without exposing sensitive data.
-- ✔️ How does this help the ecosystem?
-Eliminates repeated KYC checks.
-Enables instant onboarding.
-Reduces compliance costs.
-Minimizes data exposure.
-Improves interoperability across Stellar anchors.
-
-- ✔️ How does the system work in practice?
-Scenario 1: New User Registration
-User completes KYC with an anchor (e.g., Ripio).
-SAK verifies KYC via API.
-User can transact (e.g., ARS → USDC).
-Other anchors can retrieve verified KYC data.
-Scenario 2: Returning User
-User initiates a transaction with another anchor (e.g., Anclap).
-System retrieves previously validated KYC via SAK API.
-Transaction proceeds seamlessly without re-verification.
-
-- ✔️ Why is this important?
-Security: Encrypted, decentralized storage (IPFS + encryption).
-Efficiency: One-time KYC for multiple anchors.
-Flexibility: Works across wallets, apps, and anchors.
-Speed: Faster onboarding and transactions.
-
-- ✔️ What’s next on the roadmap?
-Data storage: IPFS + encryption for immutable, secure blobs.
-Real-world testing: Integration with Anclap (Argentina) anchor API.
 
 ---
 
