@@ -62,7 +62,7 @@ Each Anchor runs its own KYC process:
 
 ## 3. Solution Overview  
 
-**Our infra delivers a unified KYC proxy aligned with (SEPs 10/12/24), enabling one-time user verification and permissioned KYC access that any anchor can reuse..**  
+**Our infra delivers a unified KYC proxy aligned with (SEPs 10/12/24), enabling one-time user verification and permissioned KYC access that any anchor can reuse.**  
 
 This eliminates:
 
