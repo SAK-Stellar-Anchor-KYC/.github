@@ -2,9 +2,7 @@
   <img src="https://github.com/user-attachments/assets/969c0de8-da7b-4a13-b549-66e5cbed576f" alt="video-Ancla" />
 </p>
 
-<h2 align="center">“Security You Can Anchor To.”</h2>
-
----
+<h2 align="center">Security You Can Anchor To.</h2>
 
 ## Table of Contents
 1. SAK
@@ -64,9 +62,7 @@ Each Anchor runs its own KYC process:
 
 ## 3. Solution Overview  
 
-### **Main Idea**
-**SAK provides a unified and automated KYC system with a ZK-based encrypted Vault.**  
-Users complete KYC **only once**, and Anchors verify user validation through SAK.
+**Our infra delivers a unified KYC proxy aligned with (SEPs 10/12/24), enabling one-time user verification and permissioned KYC access that any anchor can reuse..**  
 
 This eliminates:
 
